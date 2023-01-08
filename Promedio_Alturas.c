@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 
 float promedio (int valores [], int cantidad){
 	int i;

@@ -1,8 +1,7 @@
 #include<stdio.h>
-#include<conio.h>
-#include<windows.h>
-main()
-	{
+
+int main()
+{
 		int n,i;
 		printf("Ingrese un numero: ");
 		scanf("%i",&n);
@@ -13,5 +12,5 @@ main()
 					printf("\n%i",i);
 			} 
 		}
-	getch();	
-	}
+	return 0;	
+}

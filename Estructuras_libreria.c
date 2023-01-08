@@ -8,6 +8,29 @@ struct Libreria
 	float precio;
 }book;
 
+void capturar();
+void mostrar();
+void salir();
+
+int main()
+{
+	int opc;
+	do
+	{
+		printf("\nPrograma Biblioteca con Estructuras\n");
+		printf("\n 1. Capturar \n 2. Mostrar \n 3. Salir\n\n");
+		scanf("%d",&opc);
+		if (opc==1)
+		capturar();
+		if (opc==2)
+		mostrar();
+		if (opc==3)
+		salir();
+	} 	while (opc!=3);
+	return 0;
+}
+
+
 void capturar()
 {
 	system("cls");
@@ -32,21 +55,4 @@ void mostrar ()
 void salir()
 {
 	printf("\nPresione enter para salir");
-}
-main()
-{
-	int opc;
-	do
-	{
-		printf("\nPrograma Biblioteca con Estructuras\n");
-		printf("\n 1. Capturar \n 2. Mostrar \n 3. Salir\n\n");
-		scanf("%d",&opc);
-		if (opc==1)
-		capturar();
-		if (opc==2)
-		mostrar();
-		if (opc==3)
-		salir();
-	} 	while (opc!=3);
-	return 0;
 }

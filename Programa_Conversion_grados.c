@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #include<stdlib.h>
 
 void FaC ();
@@ -9,15 +8,15 @@ void KaC ();
 void salir();
 float resp;
 
-main()
+int main()
 {
 	int g, opc;
-	
+
 	printf("\nPrograma de Conversion de Grados");
-		
+
 	printf("\nSeleccione una opcion\n\n1) Grados Farenheit a Celsius \n2) Grados Celsius a Farenheit \n3) Grados Celsius a Kelvin \n4) Grados Kelvin a Celsius \n5) Salir\n");
 	scanf("%i",&opc);
-	
+
 	switch (opc)
 	{
 		case 1: FaC ();
@@ -29,14 +28,14 @@ main()
 		case 4: KaC ();
 		break;
 		case 5: salir();
-		break; 
+		break;
 	}
-	getch();
+	return 0;
 }
 
 void FaC ()
 {
-	system("cls");
+	//system("cls");
 	int g;
 	printf("\nIngrese Grados a Convertir: ");
 	scanf("%i",&g);
@@ -47,7 +46,7 @@ void FaC ()
 
 void CaF ()
 {
-	system("cls");
+	//system("cls");
 	int g;
 	printf("\nIngrese Grados a Convertir: ");
 	scanf("%i",&g);
@@ -58,7 +57,7 @@ void CaF ()
 
 void CaK ()
 {
-	system("cls");
+	//system("cls");
 	int g;
 	printf("\nIngrese Grados a Convertir: ");
 	scanf("%i",&g);
@@ -69,7 +68,7 @@ void CaK ()
 
 void KaC ()
 {
-	system("cls");
+	//system("cls");
 	int g;
 	printf("\nIngrese Grados a Convertir: ");
 	scanf("%i",&g);

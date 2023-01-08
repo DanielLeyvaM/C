@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <conio.h>
+
 main()
 {
 	int f,c,mat[3][2];
@@ -32,7 +32,7 @@ main()
 			printf("\t%i",mat[f][c]);
 		}
 	}
-printf("\n\nPresione enter para salir");	
-getch();
+	printf("\n\nPresione enter para salir");	
+	return 0;
 }
 

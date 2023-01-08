@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #include<stdlib.h>
 
 void FaC (int x);
@@ -22,19 +21,20 @@ void main()
 	switch (opc)
 	{
 		case 1: FaC (g);
-		break;
+			break;
 		case 2: CaF (g);
-		break;
+			break;
 		case 3: CaK (g);
-		break;
+			break;
 		case 4: KaC (g);
-		break;
+			break;
 		case 5: salir();
-		break;
+			break;
 		default: printf("\nOpcion Inexistente");
+			break;
 	}
 	printf("\nPresione enter para salir");
-	getch();
+	return 0;
 }
 
 void FaC (int x)

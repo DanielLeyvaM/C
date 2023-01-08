@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
-main ()
+
+int main ()
 {
 	char opc;
 	int m;
@@ -14,7 +15,7 @@ main ()
 	printf("\nA) Triangulo \nB) Cuadrado \nC) Rectangulo \nD) Circulo \nE) Ninguna \n");
 	scanf("%c",&opc);
     
-        switch (opc)
+    switch (opc)
 	{
 		case 'A': 
              {
@@ -72,15 +73,18 @@ main ()
 					break;
                 }
      
-      default: printf("Opcion Inexistente");
-      	}
+      default: {
+		  printf("Opcion Inexistente");
+			break;
+		}
+	
    
-   printf("\nRegresar al menu principal:1=Si,2=No");
-   scanf("%i",&m);
-   system("cls");
-}
- while (m==1);
+		printf("\nRegresar al menu principal:1=Si,2=No");
+		scanf("%i",&m);
+		system("cls");
+	}
+	
+	while (m==1);
  
-getch();
-
+	return 0;
 }
